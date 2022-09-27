@@ -57,7 +57,7 @@ public class LibraryMember {
 
     @Override
     public String toString() {
-        return "------------------------" +
+        return "-------------------------" +
                 "\nmemberId = " + memberId +
                 "\nname = '" + name;
     }
