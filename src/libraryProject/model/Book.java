@@ -1,13 +1,10 @@
 package libraryProject.model;
 
-import libraryProject.enums.Status;
-
 public class Book {
     private Long bookId;
     private String title;
     private int yearOfProduction;
     private String author;
-    private Status status = Status.AVAILABLE;
 
     private LibraryMember currentHolder;
 
@@ -43,19 +40,18 @@ public class Book {
         this.author = author;
     }
 
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
     public LibraryMember getCurrentHolder() {
         return currentHolder;
     }
 
     public void setCurrentHolder(LibraryMember currentHolder) {
         this.currentHolder = currentHolder;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "\nbookId = " + bookId +
+                "\ntitle = '" + title + '\'';
     }
 }

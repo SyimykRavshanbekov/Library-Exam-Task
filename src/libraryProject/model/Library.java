@@ -12,4 +12,12 @@ public class Library {
         this.libraryMembers = new ArrayList<>();
     }
 
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public List<LibraryMember> getLibraryMembers() {
+        return libraryMembers;
+    }
+
 }

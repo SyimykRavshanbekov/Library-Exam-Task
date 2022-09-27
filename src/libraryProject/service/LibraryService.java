@@ -16,7 +16,7 @@ public interface LibraryService {
 
     List<Book> getLibraryBooks();
 
-    Book findLibraryBookById(Long id);
+    void findLibraryBookById();
 
     void deleteLibraryBookByID(Long id);
 
