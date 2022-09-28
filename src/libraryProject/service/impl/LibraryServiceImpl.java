@@ -73,7 +73,7 @@ public class LibraryServiceImpl implements LibraryService {
         dao.getLibrary().getBooks().stream().filter(x -> x.getBookId() == id)
                 .findFirst().stream()
                 .forEach(x -> System.out.println("Book ID = " + x.getBookId() +
-                        "\ntitle = " + x.getTitle() + "\nCurrently Holding = " + x.getCurrentHolder().getName()));}
+                        "\ntitle = " + x.getTitle() + "\nCurrently Holding = " + x.getCurrentHolder()));}
 
     @Override
     public void addBookToMember() {
